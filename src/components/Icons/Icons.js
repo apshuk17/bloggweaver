@@ -1,13 +1,13 @@
 import { cx } from "@/src/utils"
 
-export const LinkedinIcon = ({ classname, ...rest }) => (
+export const LinkedinIcon = ({ className, ...rest }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width={42}
         height={43}
         viewBox="0 0 42 43"
         fill="none"
-        className={cx(classname, 'w-full', 'h-auto')}
+        className={cx(className, 'w-full', 'h-auto')}
         {...rest}
     >
         <g clipPath="url(#a)">
