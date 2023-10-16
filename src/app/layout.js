@@ -1,5 +1,6 @@
-import { cx } from '@/utils'
+import { cx } from '@/src/utils'
 import { Inter, Manrope } from 'next/font/google'
+import Header from '@/src/components/Header'
 import './globals.css'
 
 
@@ -15,7 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cx(inter.variable, manrope.variable, 'font-mr', 'bg-light', 'dark:bg-dark')}>{children}</body>
+      <body className={cx(inter.variable, manrope.variable, 'font-mr', 'bg-light', 'dark:bg-dark')}>
+        <Header />
+        {children}</body>
     </html>
   )
 }
