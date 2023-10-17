@@ -1,10 +1,13 @@
 import { allBlogs } from 'contentlayer/generated'
+import HomeCoverSection from '../components/Home/HomeCoverSection';
+import FeaturedPosts from '../components/Home/FeaturedPosts';
 
 export default function Home() {
-  console.log('##allBlogs', allBlogs);
+  // console.log('##allBlogs', allBlogs);
   return (
     <main className="flex flex-col items-center justify-center">
-      This site is under development
+      <HomeCoverSection blogs={allBlogs} />
+      <FeaturedPosts blogs={allBlogs} />
     </main>
   )
 }
