@@ -1,5 +1,6 @@
 import { sortBlogs } from "@/src/utils";
 import BlogLayoutOne from "../Blog/BlogLayoutOne";
+import BlogLayoutTwo from "../Blog/BlogLayoutTwo";
 
 const FeaturedPosts = ({ blogs = [] }) => {
     const [_, blogOne, blogTwo, blogThree] = sortBlogs(blogs)
@@ -9,16 +10,13 @@ const FeaturedPosts = ({ blogs = [] }) => {
 
         <div className="grid grid-cols-2 grid-rows-2 gap-6 mt-10 sm:mt-16">
             <article className="col-span-2 sm:col-span-1 row-span-2 relative">
-                {/* <BlogLayoutOne blog={blog} /> */}
                 <BlogLayoutOne blog={blogTwo} />
             </article>
             <article className="col-span-2 sm:col-span-1 row-span-1 relative">
-                {/* <BlogLayoutTwo blog={blogTwo} /> */}
-                Blog Layout 2
+                <BlogLayoutTwo blog={blogOne} />
             </article>
             <article className="col-span-2 sm:col-span-1 row-span-1 relative">
-                {/* <BlogLayoutTwo blog={blogThree} /> */}
-                Blog Layout 2
+                <BlogLayoutTwo blog={blogThree} />
             </article>
         </div>
     </section>;
